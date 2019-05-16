@@ -1,0 +1,10 @@
+version: "2"
+
+services:
+  jenkins:
+    image: jenkins
+    restart: always
+    ports:
+      - 8080:8080
+    volumes:
+      - /Path/to/internal:/var/jenkins_home
